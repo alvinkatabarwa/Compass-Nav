@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Navigation</title>
+    <link rel="shortcut icon" href="../Profile pictures/0950887e4df5e9db2da88611eaaa8cda.png" type="image/png">
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+      }
+
+      header {
+          background-color: #333;
+          color: white;
+          padding: 15px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px;
+      }
+
+      header .logo {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-top: 30px;
+      }
+
+      header nav a {
+          color: rgb(250, 250, 250);
+          text-decoration: none;
+          margin-left: 20px;
+          font-size: 1em;
+          margin-top: 50px;
+      }
+
+      header nav a:hover {
+          text-decoration: underline;
+      }
+
+      main {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      #map {
+          width: 80%;
+          height: 100%;
+          border: 2px solid #333;
+          border-radius: 40px;
+          box-shadow: 15px 15px 15px 0 rgba(17, 16, 16, 0.77);
+          position: relative;
+          
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%; 
+          border: none;
+          border-radius: 40px;
+          display: block;
+      }
+
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+          margin-top: 45px;
+      }
+
+      button {
+          color: rgb(255, 255, 255);
+          background-color: #66676a;
+          padding: 5px;
+          font-size: 1rem;
+          font-weight: bold;
+          border: 2px solid #333;
+          position: absolute;
+          top: 89px; 
+          right: 10px; 
+          border-radius: 5px;
+      }
+
+      button:hover {
+          text-decoration: underline;
+          color: rgb(63, 63, 80);
+          box-shadow: 15px 15px 15px 0 rgba(17, 16, 16, 0.77);
+      }
+
+    </style>
+    <script type="module" src="./homepage.js"></script>
+</head>
+<body>
+   
+    <button id="logout">Logout</button>
+    
+    <header>
+        <div class="logo" href="../Profile pictures/0950887e4df5e9db2da88611eaaa8cda.png">Compass Navigation</div>
+        <nav>
+            <a href="./homepage.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./Reviews.html">Reviews</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15950.230059745889!2d30.147339005249023!3d-1.9289153598041586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca77688d3131f%3A0x3a65f6d29a33c0d3!2sAfrican%20Leadership%20University!5e0!3m2!1sfr!2srw!4v1722434455068!5m2!1sfr!2srw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Compass Navigation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
